@@ -1,12 +1,11 @@
 package com.br.productapp.controller;
 
+import com.br.productapp.dto.ProductDTO;
 import com.br.productapp.entity.Product;
 import com.br.productapp.service.ProductService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,11 +21,6 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public ResponseEntity<List<Product>> findAll(){
-        return new ResponseEntity<List<Product>>(productService.findAll(), HttpStatus.OK);
-    }
-
-    /*@GetMapping
     public ResponseEntity<Iterable<Product>> findAll(){
         return new ResponseEntity<Iterable<Product>>(productService.findAll(), HttpStatus.OK);
     }
@@ -43,7 +37,6 @@ public class ProductController {
     }
 
     @PostMapping
-    @Transactional(rollbackFor = Exception.class)
     public ResponseEntity<?> save(@RequestBody Product product) {
         return new ResponseEntity<>(productService.save(product),HttpStatus.CREATED);
     }
@@ -53,5 +46,5 @@ public class ProductController {
         productService.update(product,id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
-*/
+
 }

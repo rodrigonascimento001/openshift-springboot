@@ -1,4 +1,4 @@
-package com.br.productapp.error;
+package br.com.productapp.error;
 
 public class CustomErrorType {
     private String errorMessage;

@@ -1,10 +1,9 @@
-package com.br.productapp.service;
+package br.com.productapp.service;
 
-import com.br.productapp.dto.ProductDTO;
-import com.br.productapp.entity.Product;
-import com.br.productapp.enums.CategoryEnum;
-import com.br.productapp.error.ResourceNotFoundException;
-import com.br.productapp.repository.ProductRepository;
+import br.com.productapp.dto.ProductDTO;
+import br.com.productapp.entity.Product;
+import br.com.productapp.error.ResourceNotFoundException;
+import br.com.productapp.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

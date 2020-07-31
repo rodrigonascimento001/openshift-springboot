@@ -1,8 +1,8 @@
-package com.br.productapp.dto;
+package br.com.productapp.dto;
 
 
-import com.br.productapp.entity.Product;
-import com.br.productapp.enums.CategoryEnum;
+import br.com.productapp.entity.Product;
+import br.com.productapp.enums.CategoryEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,4 @@
-package com.br.productapp.enums;
+package br.com.productapp.enums;
 
 public enum CategoryEnum {
     ELETRONICS(0, "eletronics"),AUTOMOTIVE(1, "automotive")

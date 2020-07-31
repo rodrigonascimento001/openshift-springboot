@@ -1,4 +1,4 @@
-package com.br.productapp.error;
+package br.com.productapp.error;
 
 public class ErrorDetails {
     private String title;
